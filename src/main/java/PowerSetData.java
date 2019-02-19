@@ -112,34 +112,30 @@ public class PowerSetData {
                     Set<Set<Integer>> ans = PowerSet.powerSetImplementation3(myArray);
 
                     for (Set<Integer> item : ans) {
-                    System.out.print("[ ");
-                    for (Integer item2 : item) {
-                        System.out.print(item2 + " ");
+                    	System.out.print("[ ");
+                    	for (Integer item2 : item) {
+                    		System.out.print(item2 + " ");
                         }
-                            System.out.print("] ");
-
-                        }
-
-
-                            break;
-                    }
-        default:
-            List<List<Integer>> ans = PowerSet.powerSetImplementation2(myArray);
-
-                for (List<Integer> item : ans) {
-                System.out.print("[ ");
-                for (Integer item2 : item) {
-                    System.out.print(item2 + " ");
-                    }
-                        System.out.print("] ");
-
+                    	System.out.print("] ");
                     }
 
                     break;
-                }
-
         }
-    }
+        default:
+            		List<List<Integer>> ans = PowerSet.powerSetImplementation2(myArray);
+
+            		for (List<Integer> item : ans) {
+            			System.out.print("[ ");
+            			for (Integer item2 : item) {
+            				System.out.print(item2 + " ");
+            			}
+                        System.out.print("] ");
+                    }
+
+                    break;
+        }
+	}
+}
 
 
 
